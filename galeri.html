@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Galeri tentang pacarku</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="galeri.css">
+	</head>
+	<body>
+
+		<section class="gallery">
+			<div class="container">
+				<div class="row">
+					<div class="gallery-filter">
+						<span class="filter-item active" data-filter="all">Semua</span>
+						<span class="filter-item" data-filter="vc">Panggilan Video</span>
+						<span class="filter-item" data-filter="pap">Foto</span>
+						<span class="filter-item" data-filter="chat">Mengobrol</span>
+						<a href="cs.html" font-size: 25px; style="color: #ffffff" font-weight: bold;> FOTO BARENG</a>
+					</div>
+				</div>
+				<audio controls> 
+					<source src="ssstik.io_1713641547926.mp3" margin-right: auto; margin-left: auto; type="audio/mpeg"></audio>
+				<div class="row">
+
+					<div class="gallery-item travel">
+						<div class="gallery-item-inner">
+							<img src="1.jpg" alt="pap">
+						</div>
+					</div>
+
+					<div class="gallery-item laptop">
+						<div class="gallery-item-inner">
+							<img src="2.jpg" alt="pap">
+						</div>
+					</div>
+
+					<div class="gallery-item photograph">
+						<div class="gallery-item-inner">
+							<img src="3.jpg" alt="vc">
+						</div>
+					</div>
+
+					<div class="gallery-item watch">
+						<div class="gallery-item-inner">
+							<img src="4.jpg" alt="vc">
+						</div>
+					</div>
+
+					<div class="gallery-item laptop">
+						<div class="gallery-item-inner">
+							<img src="5.jpg" alt="pap">
+						</div>
+					</div>
+
+					<div class="gallery-item travel">
+						<div class="gallery-item-inner">
+							<img src="6.jpg" alt="pap">
+						</div>
+					</div>
+
+					<div class="gallery-item photograph">
+						<div class="gallery-item-inner">
+							<img src="ki.jpg" alt="pap">
+						</div>
+					</div>
+
+					<div class="gallery-item laptop">
+						<div class="gallery-item-inner">
+							<img src="pi.jpg" alt="pap">
+						</div>
+					</div>
+					
+					<div class="gallery-item laptop">
+						<div class="gallery-item-inner">
+							<img src="9.jpg" alt="pap">
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		<script>
+const filterContainer = document.querySelector(".gallery-filter"),
+ galleryItems = document.querySelectorAll(".gallery-item");
+
+ filterContainer.addEventListener("click", (event) =>{
+if(event.target.classList.contains("filter-item")){
+ filterContainer.querySelector(".active").classList.remove("active");
+ event.target.classList.add("active");
+ const filterValue = event.target.getAttribute("data-filter");
+	 galleryItems.forEach((item) =>{
+ if(item.classList.contains(filterValue) || filterValue === 'all'){
+ 	item.classList.remove("hide");
+ 	 item.classList.add("show");
+ }
+ else{
+ 	item.classList.remove("show");
+ 	item.classList.add("hide");
+ }
+	 });
+}
+ });
+</script>
+	</body>
+</html>
