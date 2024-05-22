@@ -20,8 +20,7 @@ var teksSekarang = 1;var ftom=0;var pesanwhatsapp = "";const body = document.que
           
           if(teksSekarang == 12){
             pesanwhatsapp = "1%29%20" + teks3.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" + iteks3.value + "%0A2%29%20" + teks4.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" + iteks4.value + "%0A3%29%20" + teks5.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" + iteks5.value + "%0A4%29%20" + teks6.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" + iteks6.value + "%0A5%29%20" + teks7.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" + iteks7.value + "%0A6%29%20" + teks8.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" + iteks8.value + "%0A7%29%20" + teks9.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" + iteks9.value + "%0A8%29%20" + teks10.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" + iteks10.value + "%0A9%29%20" + teks11.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" +
-  iteks11.value + "%0A9%29%20" + teks11.innerText +"%0A%20%20%20%20%20%2AJawab%3A%2A%20" +
-  iteks12.value + ""
+  iteks11.value + ""
             katanimasi()
           }
         }, 50);
